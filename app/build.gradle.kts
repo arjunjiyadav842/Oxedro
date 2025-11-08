@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId = "tech.oxedro"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -58,8 +58,9 @@ dependencies {
     implementation(libs.androidx.compose.material3)
 
     // Supabase
+    implementation(platform(libs.supabase.bom))
     implementation(libs.supabase.postgrest.kt)
-    implementation(libs.supabase.gotrue.kt)
+    implementation(libs.supabase.auth.kt)
     implementation(libs.ktor.client.android)
 
     // ViewModel & Navigation
