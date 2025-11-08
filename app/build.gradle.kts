@@ -70,6 +70,9 @@ dependencies {
     // Image Loading
     implementation(libs.coil.compose)
 
+    // Material Icons Extended
+    implementation(libs.androidx.material.icons.extended)
+
     // Serialization
     implementation(libs.kotlinx.serialization.json)
 
